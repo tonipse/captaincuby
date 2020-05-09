@@ -6,6 +6,7 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
   font-family: "Montserrat";
 }
 
@@ -97,7 +98,7 @@ body {
 .ich-img img {
   height: 90vh;
   width: auto;
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   left: 40px;
 }
