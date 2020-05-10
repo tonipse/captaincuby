@@ -18,6 +18,11 @@ body {
   background-image: url(../img/mywork/hintergrund.png);
 }
 
+.about-body {
+  background-image: url(../img/about/hintergrund.png);
+  background-position: top center;
+}
+
 /*NAVIGATION (OBEN RECHTS)*/
 .nav {
   position: absolute;
@@ -164,5 +169,40 @@ body {
   height: 10vh;
   right: 450px;
   top: 450px;
+}
+
+.about-container {
+  width: 99vw;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 10%;
+}
+
+.about-container .left,
+.about-container .right {
+  width: 30vw;
+}
+
+.about-container p {
+  font-size: 20pt;
+  color: white;
+  font-weight: 600;
+  text-shadow: 0px 3px 10px black;
+}
+
+.about-container h1 {
+  color: white;
+  font-size: 40pt;
+  text-shadow: 0px 3px 10px black;
 }
 /*# sourceMappingURL=style.css.map */
