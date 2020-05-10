@@ -27,6 +27,13 @@ body {
    background-size: cover;
    background-position: top center;
 }
+.gallery-body {
+   background-image: url(../img/gallery/hintergrund.png);
+   background-color: black;
+   background-size: contain;
+   background-position: top center;
+   background-repeat: no-repeat;
+}
 /*NAVIGATION (OBEN RECHTS)*/
 .nav {
    position: absolute;
@@ -203,4 +210,28 @@ body {
       font-weight: 600;
       text-shadow: 6px 6px 5px rgb(0, 0, 0);
    }
+}
+.gallery {
+   width: auto;
+   height: 100%;
+   margin-left: 50%;
+   transform: translateX(-50%);
+   margin-top: 120px;
+}
+.gallery-btn-l {
+   float: left;
+   transform: translateY(-50vh);
+}
+.gallery-btn-r {
+   float: right;
+   transform: translateY(-50vh);
+}
+.gallery-btn-r,
+.gallery-btn-l {
+   width: 70px;
+   height: 70px;
+   border: none;
+   font-size: 30px;
+   color: white;
+   background-color: black;
 }
