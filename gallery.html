@@ -1,63 +1,44 @@
 <!DOCTYPE html>
 <html lang="de">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <title>Document</title>
+    <title>Document</title>
 
-      <!--Eigenes Stylesheet-->
-      <link rel="stylesheet" href="./css/style.css" />
-   </head>
-   <body class="gallery-body">
-      <!--NAVIGATION-->
-      <div class="nav-1">
-         <a href="index.html">Home</a>
-         <a href="my-work.html">My Work</a>
-         <a href="about.html">About me</a>
-         <a href="gallery.html">Gallery</a>
-         <a href="idols.html">Idols</a>
-         <a href="filmmaking.html">Filmmaking</a>
-         <a href="blog.html">Blog</a>
-         <a href="contact.html">Contact</a>
+    <!--Eigenes Stylesheet-->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="gallery-body">
+    <!--NAVIGATION-->
+    <div class="nav-1">
+      <a href="index.html">Home</a>
+      <a href="my-work.html">My Work</a>
+      <a href="about.html">About me</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="idols.html">Idols</a>
+      <a href="filmmaking.html">Filmmaking</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <!--NAVIGATION ENDE-->
+
+    <div class="gallery">
+      <div class="v">
+        <img src="./img/gallery/slide/Berg.jpg" />
+        <img src="./img/gallery/slide/Fahrrad.jpg" />
       </div>
-      <!--NAVIGATION ENDE-->
-
-      <div class="gallery">
-         <img class="mySlides" src="./img/gallery/slide/Berg.jpg" style="width: 100%; height: 100%;" />
-         <img class="mySlides" src="./img/gallery/slide/Fahrrad.jpg" style="width: 100%; height: 100%;" />
-         <img class="mySlides" src="./img/gallery/slide/Fly.jpg" style="width: 100%; height: 100%;" />
-         <img class="mySlides" src="./img/gallery/slide/Gesicht.jpg" style="width: 100%; height: 100%;" />
-         <img class="mySlides" src="./img/gallery/slide/Highway.jpg" style="width: 100%; height: 100%;" />
-         <img class="mySlides" src="./img/gallery/slide/Wal.jpg" style="width: 100%; height: 100%;" />
-         <img class="mySlides" src="./img/gallery/slide/Zilla.jpg" style="width: 100%; height: 100%;" />
-
-         <button class="gallery-btn-l" onclick="plusDivs(-1)">&#10094;</buttons=>
-         <button class="gallery-btn-r" onclick="plusDivs(1)">&#10095;</button>
+      <div class="v">
+        <img src="./img/gallery/slide/Fly.jpg" />
+        <img src="./img/gallery/slide/Gesicht.jpg" />
       </div>
-
-      <script>
-         var slideIndex = 1;
-         showDivs(slideIndex);
-
-         function plusDivs(n) {
-            showDivs((slideIndex += n));
-         }
-
-         function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            if (n > x.length) {
-               slideIndex = 1;
-            }
-            if (n < 1) {
-               slideIndex = x.length;
-            }
-            for (i = 0; i < x.length; i++) {
-               x[i].style.display = "none";
-            }
-            x[slideIndex - 1].style.display = "block";
-         }
-      </script>
-   </body>
+      <div class="v">
+        <img src="./img/gallery/slide/Highway.jpg" />
+        <img src="./img/gallery/slide/Wal.jpg" />
+      </div>
+      <div class="v">
+        <img src="./img/gallery/slide/Zilla.jpg" />
+      </div>
+    </div>
+  </body>
 </html>
