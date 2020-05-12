@@ -12,14 +12,25 @@ body {
 
 .index-body {
   background-image: url(../img/index/hintergrund.png);
+  background-size: cover;
+  background-position: top center;
 }
 
 .mywork-body {
   background-image: url(../img/mywork/hintergrund.png);
+  background-size: cover;
+  background-position: top center;
 }
 
 .about-body {
   background-image: url(../img/about/hintergrund.png);
+  background-size: cover;
+  background-position: top center;
+}
+
+.idols-body {
+  background-image: url(../img/idols/hintergrund.jpg);
+  background-size: cover;
   background-position: top center;
 }
 
@@ -31,10 +42,10 @@ body {
 
 .gallery-body {
   background-image: url(../img/gallery/hintergrund.png);
-  background-color: black;
   background-size: contain;
   background-position: top center;
   background-repeat: no-repeat;
+  background-color: black;
 }
 
 /*NAVIGATION (OBEN RECHTS)*/
@@ -268,7 +279,6 @@ body {
   margin-left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  margin-top: 140px;
   margin-bottom: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -292,5 +302,13 @@ body {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   margin-top: 30px;
+}
+
+.gallery-body h1 {
+  color: white;
+  font-size: 90pt;
+  margin-top: 120px;
+  line-height: 90pt;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
