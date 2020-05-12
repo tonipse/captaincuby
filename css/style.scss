@@ -12,7 +12,7 @@ body {
 }
 
 .index-body {
-   background-image: url(../img/index/hintergrund.png);
+   background-image: url(../img/index/hintergrund.jpg);
    background-size: cover;
    background-position: top center;
    background-attachment: fixed;
@@ -104,13 +104,19 @@ body {
       color: rgb(141, 141, 141);
    }
 }
-/*Bild (ich.png) auf index.html*/
 .ich-img img {
-   height: 90vh;
+   height: 85vh;
    width: auto;
    position: fixed;
    bottom: 0px;
    left: 40px;
+}
+.index-ich-img img {
+   height: 85vh;
+   width: auto;
+   position: fixed;
+   bottom: 0px;
+   left: 0px;
 }
 .ich-mywork-img img {
    height: 85vh;
@@ -198,7 +204,7 @@ body {
    bottom: 0;
    left: 0;
 
-   width: 40vw;
+   height: 85vh;
 }
 .filmmaking-container {
    display: flex;
