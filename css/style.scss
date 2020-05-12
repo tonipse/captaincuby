@@ -1,6 +1,6 @@
 /*Montserrat Schriftart*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-/*Allgemeine Resets*/
+/*Allgemeine Anpassungen*/
 body {
    margin: 0;
    padding: 0;
@@ -15,33 +15,37 @@ body {
    background-image: url(../img/index/hintergrund.png);
    background-size: cover;
    background-position: top center;
-}
-.mywork-body {
-   background-image: url(../img/mywork/hintergrund.png);
-   background-size: cover;
-   background-position: top center;
+   background-attachment: fixed;
 }
 .about-body {
    background-image: url(../img/about/hintergrund.png);
    background-size: cover;
    background-position: top center;
+   background-attachment: fixed;
 }
 .idols-body {
    background-image: url(../img/idols/hintergrund.jpg);
    background-size: cover;
    background-position: top center;
+   background-attachment: fixed;
 }
 .filmmaking-body {
    background-image: url(../img/filmmaking/hintergrund.png);
    background-size: cover;
    background-position: top center;
+   background-attachment: fixed;
+}
+.mywork-body {
+   background-image: url(../img/mywork/hintergrund.png);
+   background-size: cover;
+   background-position: top center;
+   background-attachment: fixed;
 }
 .gallery-body {
    background-image: url(../img/gallery/hintergrund.png);
-   background-size: contain;
+   background-size: cover;
    background-position: top center;
-   background-repeat: no-repeat;
-   background-color: black;
+   background-attachment: fixed;
 }
 /*NAVIGATION (OBEN RECHTS)*/
 
