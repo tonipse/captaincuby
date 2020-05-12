@@ -376,4 +376,46 @@ body {
   font-size: 20pt;
   text-align: center;
 }
+
+.contactform {
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 120px;
+}
+
+.contactform input,
+.contactform textarea {
+  width: 100%;
+  padding: 7px;
+  margin-top: 10px;
+  border-radius: 10px;
+  background: #a0a0a0;
+  border: none;
+}
+
+.contactform h1 {
+  text-align: center;
+  font-size: 90px;
+  color: white;
+}
+
+.contactform button {
+  background-color: green;
+  padding: 15px;
+  font-size: 15pt;
+  border: none;
+  color: white;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 10px;
+  border-radius: 60px;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.contactform button:hover {
+  background-color: #005300;
+}
 /*# sourceMappingURL=style.css.map */
