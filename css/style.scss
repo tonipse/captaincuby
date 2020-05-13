@@ -230,6 +230,11 @@ body {
       font-weight: 600;
       text-shadow: 6px 6px 5px rgb(0, 0, 0);
    }
+   h1 {
+      color: white;
+      text-align: center;
+      line-height: 41pt;
+   }
 }
 .gallery {
    width: 95vw;
@@ -256,6 +261,7 @@ body {
    margin-top: 120px;
    line-height: 90pt;
    text-align: center;
+   text-shadow: 6px 6px 5px rgb(0, 0, 0);
 }
 .idols-img {
    display: flex;
@@ -306,11 +312,13 @@ body {
       border-radius: 10px;
       background: rgb(160, 160, 160);
       border: none;
+      resize: none;
    }
    h1 {
       text-align: center;
       font-size: 90px;
       color: white;
+      text-shadow: 6px 6px 5px rgb(0, 0, 0);
    }
    button {
       background-color: green;
@@ -326,5 +334,53 @@ body {
    }
    button:hover {
       background-color: rgb(0, 83, 0);
+   }
+}
+@media only screen and (max-width: 900px) {
+   /*NAVIGATION RESPONSIVE*/
+   .nav-1 {
+      flex-direction: column;
+      background-color: black;
+      height: 500px;
+      position: absolute;
+      width: 96vw;
+   }
+   /*FILMMAKING RESPONSIVE*/
+   .filmmaking-ich-img {
+      display: none;
+   }
+   .filmmaking-container {
+      margin-top: 600px;
+      display: block;
+   }
+   .filmmaking-text {
+      width: 95vw;
+      display: block;
+      margin-left: 1vw;
+   }
+   .filmmaking-img {
+      margin-top: 10px;
+      img {
+         width: 95vw;
+      }
+   }
+   /*GALLERY RESPONSIVE*/
+   .gallery-body {
+      h1 {
+         margin-top: 500px;
+      }
+      .gallery {
+         margin-top: 10px;
+      }
+      .v {
+         flex-direction: column;
+         margin-top: 0px;
+         img {
+            width: 95vw;
+            height: auto;
+            margin-top: 10px;
+            border-radius: 0px;
+         }
+      }
    }
 }
