@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Montserrat Schriftart*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /*Allgemeine Anpassungen*/
@@ -10,6 +11,7 @@ body {
   font-family: "Montserrat";
 }
 
+/*HINTERGRUNDBILDER AUD DEN VERSCHIEDENEN SEITEN*/
 .index-body {
   background-image: url(../img/index/hintergrund.jpg);
   background-size: cover;
@@ -38,6 +40,14 @@ body {
   background-attachment: fixed;
 }
 
+.filmmaking-body h1 {
+  color: white;
+  font-size: 40pt;
+  line-height: 90pt;
+  text-align: center;
+  text-shadow: 6px 6px 5px black;
+}
+
 .mywork-body {
   background-image: url(../img/mywork/hintergrund.png);
   background-size: cover;
@@ -61,7 +71,7 @@ body {
   background-attachment: fixed;
 }
 
-/*NAVIGATION (OBEN RECHTS)*/
+/*NAVIGATION (OBEN RECHTS) nur auf index.html*/
 .nav {
   position: absolute;
   right: 20px;
@@ -102,6 +112,7 @@ body {
   text-transform: uppercase;
 }
 
+/*NAVIGATION (OBEN) auf allen Seiten außer index.html*/
 .nav-1 {
   position: fixed;
   top: 0;
@@ -137,6 +148,7 @@ body {
   color: #8d8d8d;
 }
 
+/*DIE GRO?EN BILDER VON MIR AUF DEN VERSCHIEDENEN SEITEN (LINKS)*/
 .ich-img img {
   height: 85vh;
   width: auto;
@@ -161,6 +173,13 @@ body {
   left: 0px;
 }
 
+.filmmaking-ich-img img {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 85vh;
+}
+
 /*Zitat auf index.html*/
 .zitat-container {
   position: absolute;
@@ -180,6 +199,7 @@ body {
   font-size: 40pt;
 }
 
+/*MYWORK.HTML*/
 .mywork-in-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -212,6 +232,7 @@ body {
   margin-top: 130px;
 }
 
+/*VIMEO PLAYER / INSTAGRAM BILD (EINGEBETTET) GRÖSSE angepasst*/
 .vimeo {
   z-index: 100;
   margin-right: 20px;
@@ -227,6 +248,7 @@ body {
   width: 400px;
 }
 
+/*ABOUT.HTML*/
 .about-container {
   width: 99vw;
   margin-left: 50%;
@@ -242,6 +264,7 @@ body {
           align-items: center;
   position: absolute;
   bottom: 10%;
+  /*LINKS UND RECHTS STEHEN FÜR DIE SEITEN DER TEXT-CONTAINER*/
 }
 
 .about-container .left,
@@ -262,13 +285,7 @@ body {
   text-shadow: 3px 3px 10px black;
 }
 
-.filmmaking-ich-img img {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  height: 85vh;
-}
-
+/*FILMMAKING.HTML*/
 .filmmaking-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -311,6 +328,7 @@ body {
   line-height: 41pt;
 }
 
+/*GALLERY.HTML*/
 .gallery {
   width: 95vw;
   margin-left: 50%;
@@ -350,6 +368,7 @@ body {
   text-shadow: 6px 6px 5px black;
 }
 
+/*IDOLS.HTML*/
 .idols-img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -407,6 +426,7 @@ body {
   text-align: center;
 }
 
+/*CONTACT.HTML*/
 .contactform {
   margin-left: 50%;
   -webkit-transform: translateX(-50%);
@@ -452,6 +472,7 @@ body {
   background-color: #005300;
 }
 
+/*VERÄNDERUNGEN AUF DER SEITE WENN DER BILDSCHIRM UNTER 900px BREIT IST (RESPONSIVE*/
 @media only screen and (max-width: 900px) {
   /*NAVIGATION RESPONSIVE*/
   .nav-1 {

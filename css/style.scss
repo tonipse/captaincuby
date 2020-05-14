@@ -10,7 +10,7 @@ body {
 
    font-family: "Montserrat";
 }
-
+/*HINTERGRUNDBILDER AUD DEN VERSCHIEDENEN SEITEN*/
 .index-body {
    background-image: url(../img/index/hintergrund.jpg);
    background-size: cover;
@@ -34,6 +34,13 @@ body {
    background-size: cover;
    background-position: top center;
    background-attachment: fixed;
+   h1 {
+      color: white;
+      font-size: 40pt;
+      line-height: 90pt;
+      text-align: center;
+      text-shadow: 6px 6px 5px rgb(0, 0, 0);
+   }
 }
 .mywork-body {
    background-image: url(../img/mywork/hintergrund.png);
@@ -55,7 +62,7 @@ body {
    background-position: top center;
    background-attachment: fixed;
 }
-/*NAVIGATION (OBEN RECHTS)*/
+/*NAVIGATION (OBEN RECHTS) nur auf index.html*/
 
 .nav {
    position: absolute;
@@ -84,6 +91,7 @@ body {
       }
    }
 }
+/*NAVIGATION (OBEN) auf allen Seiten außer index.html*/
 .nav-1 {
    position: fixed;
    top: 0;
@@ -112,6 +120,7 @@ body {
       color: rgb(141, 141, 141);
    }
 }
+/*DIE GRO?EN BILDER VON MIR AUF DEN VERSCHIEDENEN SEITEN (LINKS)*/
 .ich-img img {
    height: 85vh;
    width: auto;
@@ -133,6 +142,13 @@ body {
    bottom: 0px;
    left: 0px;
 }
+.filmmaking-ich-img img {
+   position: fixed;
+   bottom: 0;
+   left: 0;
+
+   height: 85vh;
+}
 /*Zitat auf index.html*/
 .zitat-container {
    position: absolute;
@@ -150,7 +166,7 @@ body {
       font-size: 40pt;
    }
 }
-
+/*MYWORK.HTML*/
 .mywork-in-container {
    display: flex;
    flex-direction: row;
@@ -170,7 +186,7 @@ body {
    margin-left: 35%;
    margin-top: 130px;
 }
-
+/*VIMEO PLAYER / INSTAGRAM BILD (EINGEBETTET) GRÖSSE angepasst*/
 .vimeo {
    z-index: 100;
    margin-right: 20px;
@@ -183,6 +199,7 @@ body {
    margin-right: 20px;
    width: 400px;
 }
+/*ABOUT.HTML*/
 .about-container {
    width: 99vw;
 
@@ -196,6 +213,7 @@ body {
 
    position: absolute;
    bottom: 10%;
+   /*LINKS UND RECHTS STEHEN FÜR DIE SEITEN DER TEXT-CONTAINER*/
    .left,
    .right {
       width: 30vw;
@@ -212,13 +230,7 @@ body {
       text-shadow: 3px 3px 10px black;
    }
 }
-.filmmaking-ich-img img {
-   position: fixed;
-   bottom: 0;
-   left: 0;
-
-   height: 85vh;
-}
+/*FILMMAKING.HTML*/
 .filmmaking-container {
    display: flex;
 }
@@ -249,6 +261,7 @@ body {
       line-height: 41pt;
    }
 }
+/*GALLERY.HTML*/
 .gallery {
    width: 95vw;
    margin-left: 50%;
@@ -276,6 +289,7 @@ body {
    text-align: center;
    text-shadow: 6px 6px 5px rgb(0, 0, 0);
 }
+/*IDOLS.HTML*/
 .idols-img {
    display: flex;
    flex-direction: column;
@@ -315,6 +329,7 @@ body {
       text-align: center;
    }
 }
+/*CONTACT.HTML*/
 .contactform {
    margin-left: 50%;
    transform: translateX(-50%);
@@ -353,6 +368,7 @@ body {
       background-color: rgb(0, 83, 0);
    }
 }
+/*VERÄNDERUNGEN AUF DER SEITE WENN DER BILDSCHIRM UNTER 900px BREIT IST (RESPONSIVE*/
 @media only screen and (max-width: 900px) {
    /*NAVIGATION RESPONSIVE*/
    .nav-1 {
