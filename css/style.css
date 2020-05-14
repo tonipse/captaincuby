@@ -414,6 +414,7 @@ body {
   margin-top: 30px;
 }
 
+/*ÜBERSCHRIFT*/
 .gallery-body h1 {
   color: white;
   font-size: 90pt;
@@ -690,12 +691,14 @@ body {
     margin-bottom: 10%;
     margin-left: 0px;
     padding: 0px;
+    padding-bottom: 20px;
   }
   .blog-container h1 {
     font-size: 50pt;
   }
   .blog-text {
     margin-top: 40px;
+    padding: 5px;
   }
   .blog-text p {
     font-size: 15pt;
