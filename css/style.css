@@ -93,6 +93,7 @@ body {
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
+  z-index: 300;
 }
 
 .nav .nav-class {
@@ -120,6 +121,7 @@ body {
 }
 
 .nav-ni {
+  z-index: 1101;
   position: absolute;
   right: 20px;
   top: 0;
@@ -162,6 +164,7 @@ body {
 /*NAVIGATION (OBEN) auf allen Seiten außer index.html*/
 .nav-1,
 .nav-2 {
+  z-index: 400;
   position: fixed;
   top: 0;
   display: -webkit-box;
@@ -586,6 +589,9 @@ body {
     position: absolute;
     width: 100%;
   }
+  .nav-ni {
+    display: none;
+  }
   /*FILMMAKING RESPONSIVE*/
   .filmmaking-body h1 {
     font-size: 40pt;
@@ -721,6 +727,40 @@ body {
   }
   .zitat-container .under-zitat p {
     font-size: 20pt;
+  }
+  /*IDOLS REAPONSIVE*/
+  .ich-img img {
+    display: none;
+  }
+  .idols-body h1 {
+    margin-top: 520px;
+  }
+  .idols-img {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  .idols-img .row1,
+  .idols-img .row2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .idols-img .im {
+    width: 100%;
+  }
+  .idols-img .im img {
+    width: 100%;
+    height: unset;
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  .index-ich-img img {
+    height: 70vh;
+  }
+  .ich-mywork-img img {
+    height: 60vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
