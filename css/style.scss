@@ -389,6 +389,7 @@ body {
    h1 {
       font-size: 50pt;
    }
+
    p,
    h1,
    small {
@@ -503,5 +504,25 @@ body {
    /*CONTACT ReSPONSIVE*/
    .contactform {
       margin-top: 500px;
+   }
+   /*BLOG RESPONSIVE*/
+   .blog-container {
+      width: 100%;
+      height: 100%;
+
+      margin-top: 500px;
+      margin-bottom: 10%;
+      margin-left: 0px;
+
+      padding: 0px;
+      h1 {
+         font-size: 50pt;
+      }
+   }
+   .blog-text {
+      margin-top: 40px;
+      p {
+         font-size: 15pt;
+      }
    }
 }
