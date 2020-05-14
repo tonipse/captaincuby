@@ -119,6 +119,46 @@ body {
   text-transform: uppercase;
 }
 
+.nav-ni {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.nav-ni .nav-class {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+.nav-ni .nav-class a {
+  color: white;
+  font-size: 18pt;
+  font-weight: 600;
+  margin-left: 30px;
+  border: solid 4px white;
+  padding: 5px;
+  text-shadow: 6px 0px 10px black;
+  -webkit-box-shadow: 6px 0px 10px black;
+          box-shadow: 6px 0px 10px black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 /*NAVIGATION (OBEN) auf allen Seiten außer index.html*/
 .nav-1,
 .nav-2 {
